@@ -33,34 +33,22 @@ In this task, you will create and configure an AI Project within Azure AI Foundr
 
    - **Password:** <inject key="AzureAdUserPassword"></inject>
 
-1. After sign in to the portal, click on **Create project**
+1. After sign in to the portal, click on **Create project** under **Help**
 
-   ![](./media/lab1-1.png)
+   ![](./media/L1T1S4.png)
 
-1. On a **Create a Project** window, provide **my-ai-project-<inject key="Deployment ID" enableCopy="false"></inject>** for **Project name (1)** and select **Customize (2)**
+1. On the **Create a Project** window, provide **my-ai-project-<inject key="Deployment ID" enableCopy="false"></inject>** for **Project name (1)** and select **Advanced options (2)**
 
-   ![](./media/ag2.png)
+   ![](./media/L1T1S5.png)
 
-1. On the **Create a Project** blade, specify the following configuration options and click on **Next (4)**:
+1. On the **Advanced options** blade, specify the following configuration options and click on **Create **:
 
    > **Note**: You may initially encounter a permission issue, which will be resolved once the appropriate resource group is selected.
 
    - **Resource group**: **azure-ai-agents-<inject key="Deployment ID" enableCopy="false"></inject>** (1)
-   - **Location**: **<inject key="Region" enableCopy="false"></inject>** (2)
-   - **Connect Azure AI Search**: click on **Create new AI Search (3)**, enter the below provided name and click on **Next (2)**
-
-      ```
-      my-search-service-<inject key="Deployment ID" enableCopy="false"></inject>
-      ```
-   ![](./media/1.jpg)
-
-1. On the **Review and finish** page, verify all the details and click on **Create**
-
-   ![](./media/2.jpg)
-
-1. Wait for few minutes until the necessary resources provisioned.    
-
-   ![](./media/ag5.png) 
+   - **Region**: **<inject key="Region" enableCopy="false"></inject>** (2)
+   
+   ![](./media/L1T1S51.png)
 
     >**Note**: Click on **Close**, if you recieve any pop up.
 
@@ -84,7 +72,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
    - Change the Tokens per Minute Rate Limit to **200K (2)**
    - click on **deploy (3)**
 
-     ![](./media/4.jpg)   
+     ![](./media/L1T2S3.png)   
 
 1. Click on **Model + Endpoints (1)**, there you can see the deployed **gpt-4o (2)** model.
 
